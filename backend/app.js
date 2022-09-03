@@ -10,8 +10,7 @@ app.use("/api/user",router);
 app.use("/api/blog", blogRouter);
 //http://localhost:5000/api/user/logon
 
-mongoose.connect("mongodb+srv://admin:mB69I02NoH4gYp0J@cluster0.bnjtttm.mongodb.net/Blog?retryWrites=true&w=majority"
-)
+mongoose.connect()
 .then(()=>app.listen(5000))
 .then(()=>{
     
